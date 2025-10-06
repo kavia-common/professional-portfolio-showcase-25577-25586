@@ -1,0 +1,400 @@
+.jobs-detail-open-907-267 {
+  --ocean-primary: #2563EB; /* Ocean Professional */
+  --ocean-amber: #F59E0B;
+  --surface: #ffffff;
+  --background: #f8f9fa; /* from JSON background color_ref */
+  --text: #111827;
+  --muted: rgba(17, 24, 39, 0.6);
+  --border: rgba(0,0,0,0.08);
+  --shadow-soft: 0 10px 20px rgba(0,0,0,0.08);
+  --round-lg: 16px;
+  --round-md: 12px;
+  --round-sm: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+/* Root */
+.jobs-detail-open-907-267 .root-frame {
+  position: relative;
+  width: 375px;
+  min-height: 1105px;
+  margin: 0 auto;
+  background: var(--background);
+  overflow: hidden;
+}
+
+/* Status Bar */
+.jobs-detail-open-907-267 .status-bar {
+  position: relative;
+  height: 44px;
+  width: 375px;
+}
+.jobs-detail-open-907-267 .status-time {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 22px;
+  top: 11px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px; /* iOS status time size approximation */
+  line-height: 22px;
+}
+.jobs-detail-open-907-267 .status-right {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.jobs-detail-open-907-267 .battery {
+  position: relative;
+  width: 24.5px;
+  height: 11.5px;
+}
+.jobs-detail-open-907-267 .battery-path-1,
+.jobs-detail-open-907-267 .battery-path-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 11.5px;
+}
+.jobs-detail-open-907-267 .cell-bars {
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  height: 10.7px;
+}
+.jobs-detail-open-907-267 .cell-bar {
+  width: 3px;
+  background: #000;
+  opacity: 0.9;
+}
+.jobs-detail-open-907-267 .cell-bar:nth-child(1) { height: 4px; opacity: .5; }
+.jobs-detail-open-907-267 .cell-bar:nth-child(2) { height: 6px; opacity: .6; }
+.jobs-detail-open-907-267 .cell-bar:nth-child(3) { height: 8.3px; opacity: .8; }
+.jobs-detail-open-907-267 .cell-bar:nth-child(4) { height: 10.7px; }
+
+/* Top bar (64px) */
+.jobs-detail-open-907-267 .top-bar {
+  position: relative;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.jobs-detail-open-907-267 .topbar-left,
+.jobs-detail-open-907-267 .topbar-right {
+  width: 56px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.jobs-detail-open-907-267 .topbar-left .icon,
+.jobs-detail-open-907-267 .topbar-right .icon {
+  width: 20px;
+  height: 20px;
+}
+.jobs-detail-open-907-267 .icon-chevron-left-glyph,
+.jobs-detail-open-907-267 .icon-dots-glyph {
+  position: absolute;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  opacity: 0;
+}
+.jobs-detail-open-907-267 .topbar-title {
+  flex: 1;
+  text-align: center;
+  line-height: 1.1;
+}
+.jobs-detail-open-907-267 .header-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+.jobs-detail-open-907-267 .header-subtitle {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* Content area */
+.jobs-detail-open-907-267 .content {
+  position: relative;
+  padding-bottom: 140px; /* space for down button area */
+}
+.jobs-detail-open-907-267 .section {
+  padding: 24px 24px 0 24px;
+}
+.jobs-detail-open-907-267 .row {
+  display: flex;
+  align-items: center;
+}
+
+/* Job Informations */
+.jobs-detail-open-907-267 .job-informations .meta {
+  justify-content: space-between;
+  height: 22px;
+}
+.jobs-detail-open-907-267 .job-date {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 20px;
+}
+.jobs-detail-open-907-267 .badges {
+  display: flex;
+  gap: 8px;
+}
+.jobs-detail-open-907-267 .badge-left {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--text);
+  gap: 6px;
+}
+.jobs-detail-open-907-267 .badge-left .icon-clock { width: 12px; height: 12px; }
+.jobs-detail-open-907-267 .badge-left .icon-clock-glyph { position: absolute; opacity: 0; }
+.jobs-detail-open-907-267 .badge-left-text { font-size: 12px; font-weight: 600; }
+.jobs-detail-open-907-267 .badge-word {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.1);
+}
+.jobs-detail-open-907-267 .badge-word-text { font-size: 12px; color: #a16207; font-weight: 600; }
+
+.jobs-detail-open-907-267 .info .small {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 18px;
+}
+.jobs-detail-open-907-267 .title {
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 30px;
+}
+.jobs-detail-open-907-267 .status {
+  margin-top: 4px;
+  gap: 8px;
+  height: 18px;
+}
+.jobs-detail-open-907-267 .icon-location { width: 16px; height: 16px; }
+.jobs-detail-open-907-267 .icon-location-glyph { position: absolute; opacity: 0; }
+.jobs-detail-open-907-267 .status-text { font-size: 14px; line-height: 18px; }
+
+.jobs-detail-open-907-267 .unit-cta {
+  margin-top: 16px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+.jobs-detail-open-907-267 .avatars {
+  position: relative;
+  width: 54px;
+  height: 32px;
+}
+.jobs-detail-open-907-267 .avatar {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #d1d5db;
+  border: 2px solid var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+.jobs-detail-open-907-267 .avatars .a1 { left: 0; }
+.jobs-detail-open-907-267 .avatars .a2 { left: 11px; }
+.jobs-detail-open-907-267 .avatars .a3 { left: 22px; }
+.jobs-detail-open-907-267 .people .people-title { font-weight: 700; line-height: 21px; }
+.jobs-detail-open-907-267 .people .small { margin-top: 0; }
+
+/* Unit Informations section */
+.jobs-detail-open-907-267 .unit-informations .section-caption,
+.jobs-detail-open-907-267 .managers-note .section-caption,
+.jobs-detail-open-907-267 .manager-informations .section-caption {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  line-height: 24px;
+}
+.jobs-detail-open-907-267 .unit-informations .title { margin-top: -2px; }
+
+.jobs-detail-open-907-267 .map-wrap {
+  width: 327px;
+  height: 160px;
+  margin-top: 4px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #e5e7eb;
+}
+.jobs-detail-open-907-267 .map-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.jobs-detail-open-907-267 .map-pin {
+  position: absolute;
+  left: 151px; /* visually centered based on pin width (24px) */
+  top: 68px;
+  width: 24px;
+  height: 24px;
+}
+.jobs-detail-open-907-267 .pin {
+  position: absolute;
+  left: 3px;
+  top: 1.5px;
+  width: 18px;
+  height: 21px;
+}
+.jobs-detail-open-907-267 .unit-informations .status {
+  margin-top: 8px;
+}
+.jobs-detail-open-907-267 .unit-informations .link,
+.jobs-detail-open-907-267 .managers-note .link {
+  color: var(--ocean-primary);
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Manager's note */
+.jobs-detail-open-907-267 .managers-note .paragraph {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 20px;
+  margin-top: 4px;
+}
+
+/* Manager Informations */
+.jobs-detail-open-907-267 .manager-card {
+  margin-top: 4px;
+  width: 327px;
+  min-height: 56px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.jobs-detail-open-907-267 .manager-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.jobs-detail-open-907-267 .manager-name {
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/* Down button area */
+.jobs-detail-open-907-267 .down-button {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 375px;
+  height: 114px;
+  background: linear-gradient(180deg, rgba(249,250,251,0) 0%, rgba(249,250,251,0.9) 40%, rgba(249,250,251,1) 100%);
+  pointer-events: none; /* allow clicks only on buttons */
+}
+.jobs-detail-open-907-267 .down-button .bottom {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.jobs-detail-open-907-267 .cta {
+  pointer-events: auto;
+  position: relative;
+  width: 327px;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+}
+.jobs-detail-open-907-267 .cta.primary {
+  background: var(--ocean-primary);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+.jobs-detail-open-907-267 .cta:hover { transform: translateY(-1px); }
+.jobs-detail-open-907-267 .cta:active { transform: translateY(0); }
+.jobs-detail-open-907-267 .cta-text { position: relative; z-index: 1; }
+.jobs-detail-open-907-267 .cta-shadow {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 6px;
+  height: 30px;
+  border-radius: 20px;
+  filter: blur(12px);
+  background: rgba(0,0,0,0.10);
+  z-index: 0;
+}
+.jobs-detail-open-907-267 .home-indicator {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jobs-detail-open-907-267 .home-line {
+  width: 135px;
+  height: 5px;
+  background: #000;
+  opacity: .2;
+  border-radius: 100px;
+}
+
+/* Accessibility focus */
+.jobs-detail-open-907-267.show-focus button:focus-visible,
+.jobs-detail-open-907-267.show-focus a:focus-visible {
+  outline: 2px solid var(--ocean-primary);
+  outline-offset: 2px;
+}
+
+/* Responsive behavior: center screen and allow scale on larger viewports */
+@media (min-width: 420px) {
+  .jobs-detail-open-907-267 {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    background: linear-gradient(180deg, rgba(37,99,235,0.05), rgba(249,250,251,1));
+  }
+  .jobs-detail-open-907-267 .root-frame {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  }
+  .jobs-detail-open-907-267 .down-button {
+    position: absolute;
+  }
+}
+
+/* On small width, make sure content fits */
+@media (max-width: 374px) {
+  .jobs-detail-open-907-267 .root-frame { width: 100vw; }
+  .jobs-detail-open-907-267 .down-button { width: 100vw; }
+}
