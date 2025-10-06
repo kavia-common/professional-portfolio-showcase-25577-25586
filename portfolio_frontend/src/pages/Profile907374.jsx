@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './css/profile-907-374.css';
+import './css/profile-907-374.asset.css';
 
 /**
  * PUBLIC_INTERFACE

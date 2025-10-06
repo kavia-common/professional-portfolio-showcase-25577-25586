@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './css/jobs-detail-open-907-267.css';
+import './css/jobs-detail-open-907-267.asset.css';
 
 /**
  * PUBLIC_INTERFACE

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './css/take-this-jobs-907-315.css';
+import './css/take-this-jobs-907-315.asset.css';
 
 /**
  * PUBLIC_INTERFACE

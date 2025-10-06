@@ -1,0 +1,463 @@
+.take-this-jobs-907-315 {
+  --ocean-primary: #2563EB; /* Ocean Professional */
+  --ocean-amber: #F59E0B;
+  --surface: #ffffff;
+  --background: #f8f9fa; /* from JSON background color_ref */
+  --text: #111827;
+  --muted: rgba(17, 24, 39, 0.6);
+  --border: rgba(0,0,0,0.08);
+  --shadow-soft: 0 10px 20px rgba(0,0,0,0.08);
+  --round-lg: 16px;
+  --round-md: 12px;
+  --round-sm: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+/* Root */
+.take-this-jobs-907-315 .root-frame {
+  position: relative;
+  width: 375px;
+  min-height: 812px;
+  margin: 0 auto;
+  background: var(--background);
+  overflow: hidden;
+}
+
+/* Status Bar */
+.take-this-jobs-907-315 .status-bar {
+  position: relative;
+  height: 44px;
+  width: 375px;
+}
+.take-this-jobs-907-315 .status-right {
+  position: absolute;
+  top: 14px; /* approximate from y 1245.6 within 44 height */
+  right: 14px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.take-this-jobs-907-315 .battery {
+  position: relative;
+  width: 24.5px;
+  height: 11.5px;
+}
+.take-this-jobs-907-315 .battery-path-1,
+.take-this-jobs-907-315 .battery-path-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 11.5px;
+}
+.take-this-jobs-907-315 .cell-bars {
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  height: 10.7px;
+}
+.take-this-jobs-907-315 .cell-bar {
+  width: 3px;
+  background: #000;
+  opacity: 0.9;
+}
+.take-this-jobs-907-315 .cell-bar:nth-child(1) { height: 4px; opacity: .5; }
+.take-this-jobs-907-315 .cell-bar:nth-child(2) { height: 6px; opacity: .6; }
+.take-this-jobs-907-315 .cell-bar:nth-child(3) { height: 8.3px; opacity: .8; }
+.take-this-jobs-907-315 .cell-bar:nth-child(4) { height: 10.7px; }
+.take-this-jobs-907-315 .status-time {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 22px;
+  top: 11px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px; /* iOS status time size approximation */
+  line-height: 22px;
+}
+
+/* Top bar (64px) */
+.take-this-jobs-907-315 .top-bar {
+  position: relative;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.take-this-jobs-907-315 .topbar-left,
+.take-this-jobs-907-315 .topbar-right {
+  width: 56px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.take-this-jobs-907-315 .topbar-left .icon,
+.take-this-jobs-907-315 .topbar-right .icon {
+  width: 20px;
+  height: 20px;
+}
+.take-this-jobs-907-315 .icon-chevron-left-glyph,
+.take-this-jobs-907-315 .icon-dots-glyph {
+  position: absolute;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  opacity: 0;
+}
+.take-this-jobs-907-315 .topbar-title {
+  flex: 1;
+  text-align: center;
+  line-height: 1.1;
+}
+.take-this-jobs-907-315 .header-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+.take-this-jobs-907-315 .header-subtitle {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* Content area */
+.take-this-jobs-907-315 .content {
+  position: relative;
+  padding-bottom: 140px; /* space for down button area */
+}
+.take-this-jobs-907-315 .section {
+  padding: 24px 24px 0 24px;
+}
+.take-this-jobs-907-315 .row {
+  display: flex;
+  align-items: center;
+}
+
+/* Job Informations */
+.take-this-jobs-907-315 .job-informations .meta {
+  justify-content: space-between;
+  height: 22px;
+}
+.take-this-jobs-907-315 .job-date {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 20px;
+}
+.take-this-jobs-907-315 .badges {
+  display: flex;
+  gap: 8px;
+}
+.take-this-jobs-907-315 .badge-left {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--text);
+  gap: 6px;
+}
+.take-this-jobs-907-315 .badge-left .icon-clock { width: 12px; height: 12px; }
+.take-this-jobs-907-315 .badge-left .icon-clock-glyph { position: absolute; opacity: 0; }
+.take-this-jobs-907-315 .badge-left-text { font-size: 12px; font-weight: 600; }
+.take-this-jobs-907-315 .badge-word {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.1);
+}
+.take-this-jobs-907-315 .badge-word-text { font-size: 12px; color: #a16207; font-weight: 600; }
+
+.take-this-jobs-907-315 .info .small {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 18px;
+}
+.take-this-jobs-907-315 .title {
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 30px;
+}
+.take-this-jobs-907-315 .status {
+  margin-top: 4px;
+  gap: 8px;
+  height: 18px;
+}
+.take-this-jobs-907-315 .icon-location { width: 16px; height: 16px; }
+.take-this-jobs-907-315 .icon-location-glyph { position: absolute; opacity: 0; }
+.take-this-jobs-907-315 .status-text { font-size: 14px; line-height: 18px; }
+
+.take-this-jobs-907-315 .unit-cta {
+  margin-top: 16px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+.take-this-jobs-907-315 .avatars {
+  position: relative;
+  width: 54px;
+  height: 32px;
+}
+.take-this-jobs-907-315 .avatar {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #d1d5db;
+  border: 2px solid var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+.take-this-jobs-907-315 .avatars .a1 { left: 0; }
+.take-this-jobs-907-315 .avatars .a2 { left: 11px; }
+.take-this-jobs-907-315 .avatars .a3 { left: 22px; }
+.take-this-jobs-907-315 .people .people-title { font-weight: 700; line-height: 21px; }
+.take-this-jobs-907-315 .people .small { margin-top: 0; }
+
+/* Unit Informations section */
+.take-this-jobs-907-315 .unit-informations .section-caption,
+.take-this-jobs-907-315 .managers-note .section-caption,
+.take-this-jobs-907-315 .manager-informations .section-caption {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  line-height: 24px;
+}
+.take-this-jobs-907-315 .unit-informations .title { margin-top: -2px; }
+
+.take-this-jobs-907-315 .map-wrap {
+  width: 327px;
+  height: 160px;
+  margin-top: 4px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #e5e7eb;
+}
+.take-this-jobs-907-315 .map-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.take-this-jobs-907-315 .map-pin {
+  position: absolute;
+  left: 152px; /* centered approx (x:-5457 within parent) */
+  top: 68px;
+  width: 24px;
+  height: 24px;
+}
+.take-this-jobs-907-315 .pin {
+  position: absolute;
+  left: 3px;
+  top: 1.5px;
+  width: 18px;
+  height: 21px;
+}
+.take-this-jobs-907-315 .unit-informations .status {
+  margin-top: 8px;
+}
+.take-this-jobs-907-315 .unit-informations .link,
+.take-this-jobs-907-315 .managers-note .link {
+  color: var(--ocean-primary);
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Manager's note */
+.take-this-jobs-907-315 .managers-note .paragraph {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 20px;
+  margin-top: 4px;
+}
+
+/* Manager Informations */
+.take-this-jobs-907-315 .manager-card {
+  margin-top: 4px;
+  width: 327px;
+  min-height: 56px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.take-this-jobs-907-315 .manager-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.take-this-jobs-907-315 .manager-name {
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/* Down button area */
+.take-this-jobs-907-315 .down-button {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 375px;
+  height: 114px;
+  background: linear-gradient(180deg, rgba(249,250,251,0) 0%, rgba(249,250,251,0.9) 40%, rgba(249,250,251,1) 100%);
+  pointer-events: none; /* allow clicks only on buttons */
+}
+.take-this-jobs-907-315 .down-button .bottom {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.take-this-jobs-907-315 .cta {
+  pointer-events: auto;
+  position: relative;
+  width: 327px;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+}
+.take-this-jobs-907-315 .cta.primary {
+  background: var(--ocean-primary);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+.take-this-jobs-907-315 .cta.white {
+  margin-top: 20px;
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+}
+.take-this-jobs-907-315 .cta:hover { transform: translateY(-1px); }
+.take-this-jobs-907-315 .cta:active { transform: translateY(0); }
+.take-this-jobs-907-315 .cta-text { position: relative; z-index: 1; }
+.take-this-jobs-907-315 .cta-shadow,
+.take-this-jobs-907-315 .cta-shadow.white {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 6px;
+  height: 30px;
+  border-radius: 20px;
+  filter: blur(12px);
+  background: rgba(0,0,0,0.10);
+  z-index: 0;
+}
+.take-this-jobs-907-315 .home-indicator {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.take-this-jobs-907-315 .home-line {
+  width: 135px;
+  height: 5px;
+  background: #000;
+  opacity: .2;
+  border-radius: 100px;
+}
+
+/* Overlay */
+.take-this-jobs-907-315 .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); /* style_22 likely semi-transparent */
+}
+
+/* Modal */
+.take-this-jobs-907-315 .modal {
+  position: absolute;
+  left: 24px;
+  top: 149.5px; /* from y 1378.5 relative to screen, accounting for fixed content */
+  width: 327px;
+  min-height: 513px;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+.take-this-jobs-907-315 .modal-content {
+  width: 287px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.take-this-jobs-907-315 .modal-illustration {
+  width: 287px;
+  height: 243px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.take-this-jobs-907-315 .illustration {
+  width: 151px;
+  height: 203px;
+  object-fit: contain;
+}
+.take-this-jobs-907-315 .modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.take-this-jobs-907-315 .modal-subtitle {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--muted);
+}
+.take-this-jobs-907-315 .modal-buttons {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.take-this-jobs-907-315 .modal .cta.primary { width: 287px; }
+.take-this-jobs-907-315 .modal .cta.white { width: 287px; }
+.take-this-jobs-907-315 .modal .cta-shadow { left: 18px; right: 18px; }
+
+/* Typography helpers */
+.take-this-jobs-907-315 .text { letter-spacing: 0; }
+
+/* Responsive behavior: center screen and allow scale on larger viewports */
+@media (min-width: 420px) {
+  .take-this-jobs-907-315 {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    background: linear-gradient(180deg, rgba(37,99,235,0.05), rgba(249,250,251,1));
+  }
+  .take-this-jobs-907-315 .root-frame {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  }
+  .take-this-jobs-907-315 .down-button {
+    position: absolute;
+  }
+}
+
+/* On small width, make sure content fits */
+@media (max-width: 374px) {
+  .take-this-jobs-907-315 .root-frame { width: 100vw; }
+  .take-this-jobs-907-315 .down-button { width: 100vw; }
+}
